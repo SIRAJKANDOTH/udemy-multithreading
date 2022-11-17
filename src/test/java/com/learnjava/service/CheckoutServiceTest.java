@@ -19,7 +19,7 @@ class CheckoutServiceTest {
 
     @Test
     void checkout() {
-        Cart cart = DataSet.createCart(13);
+        Cart cart = DataSet.createCart(6);
         CheckoutResponse checkoutResponse = checkoutService.checkout(cart);
 
         assertEquals(CheckoutStatus.SUCCESS,checkoutResponse.getCheckoutStatus());
